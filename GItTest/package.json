@@ -1,0 +1,25 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "start-server-and-test start http://localhost:3030 cy:run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashboard": "npm run test -- --record --key your key",
+    "start": "my-server -p 3030",
+    "cy:run": "cypress run"
+  },
+  "author": "elizaveta",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.12.1",
+    "cypress-iframe": "^1.0.1",
+    "start-server-and-test": "^1.11.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "qs": "^6.9.4"
+  }
+}

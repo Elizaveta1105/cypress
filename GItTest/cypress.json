@@ -1,0 +1,8 @@
+{
+  "defaulCommansTimeout": 100000,
+  "env": {
+    "url": "https://short.io"
+  },
+  "projectId": "qh6kc9",
+  "chromeWebSecurity": false
+}
