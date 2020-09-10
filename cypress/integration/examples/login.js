@@ -71,18 +71,18 @@ describe ("My Second Test", function() {
         shortLogin.getEmail().clear()
         shortLogin.getPassword().clear()
 
-        shortLogin.getEmail().type(this.data.email)
-        shortLogin.getPassword().type(this.data.password)
-        shortLogin.toggle().uncheck()
-        shortLogin.toggle().check().should('be.checked')
-        shortLogin.submit().click()
+        // shortLogin.getEmail().type(this.data.email)
+        // shortLogin.getPassword().type(this.data.password)
+        // shortLogin.toggle().uncheck()
+        // shortLogin.toggle().check().should('be.checked')
+        // shortLogin.submit().click()
         
-        cy.url().should('include', 'dashboard')
-        cy.get('.mdc-top-app-bar__section--align-start > .rmwc-icon').click()
-        cy.get('li.mdc-list-item:nth-child(8)').click()
-        shortLogin.logIn().click()
-        shortLogin.getEmail().contains(this.data.email)
-        shortLogin.getPassword().contains(this.data.password)
+        // cy.url().should('include', 'dashboard')
+        // cy.get('.mdc-top-app-bar__section--align-start > .rmwc-icon').click()
+        // cy.get('li.mdc-list-item:nth-child(8)').click()
+        // shortLogin.logIn().click()
+        // shortLogin.getEmail().contains(this.data.email)
+        // shortLogin.getPassword().contains(this.data.password)
 
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false
